@@ -1,5 +1,9 @@
 package main
 
+import (
+	"fmt"
+)
+
 func main() {
 	// fmt.Printf("Type: %T - Value: %v\n", true, true)         // bool
 	// fmt.Printf("Type: %T - Value: %v\n", "Pedro", "Pedro")   // string
@@ -14,4 +18,10 @@ func main() {
 	// const age = 5
 	// fmt.Println(age)
 
+	parse_and_print_value(1.2333)
+}
+
+func parse_and_print_value(val interface{}) int {
+	fmt.Printf("Type: %T - Value: %v\n", val, val)
+	return 0
 }
